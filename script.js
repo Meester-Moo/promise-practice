@@ -125,3 +125,17 @@ async function doWork() {
 }
 
 doWork();
+
+//What does this mean?
+
+new Promise((r) => setTimeout(r, 2000))
+  .then((r) => {
+    console.log("I log first");
+  })
+  .then((r) => {
+    console.log("I log second");
+    return "somedata";
+  })
+  .then((r) => {
+    console.log("I log third", r);
+  }); // notice that "somedata" is printed
