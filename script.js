@@ -106,7 +106,7 @@ function processRequest(response) {
     if (e == 1) {
       resolve(`Extra Information + ${response}`);
     } else {
-      reject(`${a} was not equal to one`);
+      reject(`${e} was not equal to one`);
     }
   });
 }
