@@ -73,8 +73,6 @@ setTimeout(() => {
   console.log("______");
 });
 
-// async await
-
 // old promise way
 
 makeRequest("Google")
@@ -112,6 +110,8 @@ function processRequest(response) {
     }
   });
 }
+
+// async await
 
 async function doWork() {
   try {
